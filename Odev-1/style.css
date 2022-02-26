@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #32383e;
+  color: #ee8b1b;
+  font-size: 16px;
+}
+.container {
+  display: block;
+  display: flex;
+  margin: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.fs-2 {
+  font-size: 4rem;
+}
+.welcome {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.welcome .name {
+  text-transform: capitalize;
+  font-size: 2.6rem;
+  letter-spacing: 0.25rem;
+}
+.clock {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.info {
+  text-align: center;
+  font-size: 1rem;
+}
