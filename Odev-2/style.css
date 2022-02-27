@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+.section-center {
+  width: 90vh;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.alert {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+}
+.form h3 {
+  color: #063251;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+.form-control #todo {
+  background-color: rgb(241, 245, 248);
+  padding: 0.25rem 1rem;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  flex: 1 0 auto;
+  color: #617d98;
+  font-size: 1rem;
+}
+.btn-submit {
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  letter-spacing: 2px;
+  border-color: transparent;
+  background-color: #a5d5f8;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-size: 0.85rem;
+  transition: all 0.3s linear;
+  color: black;
+}
+.btn-submit:hover {
+  background-color: #49a6e9;
+  color: #fff;
+}
+.container {
+  margin-top: 2rem;
+  transition: all 0.3s linear;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.title {
+  margin-bottom: 0;
+  color: #102a42;
+  letter-spacing: 2px;
+  transition: all 0.3s linear;
+}
+.edit-btn,
+.delete-btn {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  transition: all 0.3s linear;
+}
+.edit-btn {
+  color: #6be675;
+}
+.delete-btn {
+  color: #e66b6b;
+}
+i {
+  font-weight: 900;
+}
+.item:hover {
+  background-color: #f1f5f8;
+}
+.btn-clear {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border-color: transparent;
+  display: grid;
+  align-items: center;
+  color: #e66b6b;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+  margin-top: 1.25rem;
+  transition: all 0.3s linear;
+}
