@@ -2,6 +2,7 @@ const submitBtn=document.querySelector('.btn-submit');
 const inputValue=document.querySelector('#todo');
 const list=document.querySelector('.toList');
 const alert=document.querySelector('.alert');
+const clearAll=document.querySelector('.btn-clear');
 //Functions
 
 //Get Value The Input
@@ -23,13 +24,16 @@ function addItem(value){
                                 </button>
                             </div>
                         </article>`;
+    //Success Alert Add
+    alert.innerText='Başarıyla Eklendi'
+    alert.style.backgroundColor='#D1E7DD';
 
     //Delete item
-    const deleteBtn=document.querySelector('.delete-btn');
-    deleteBtn.addEventListener('click',deleteItem);
+    const deleteButtons=document.querySelectorAll('.delete-btn');
+    deleteButtons.forEach(deleteBtn=>deleteBtn.addEventListener('click',deleteItem));
     //Edit item
-    const editBtn=document.querySelector('.edit-btn');
-    editBtn.addEventListener('click',editItem);
+    const editButtons=document.querySelector('.edit-btn');
+    editButtons.addEventListener('click',editItem);
 
 }
 //Add Alert items
@@ -39,7 +43,12 @@ function addAlert(){
 }
 //Delete Item Function
 function deleteItem(e){
-    console.log(e.target);
+    e.target.parentElement.parentElement.parentElement.remove();
+    e.preventDefault();
+}
+//Delete All items
+function deleteAll(){
+    list.innerHTML='';
 }
 //Edit item Function
 function editItem(){
@@ -47,3 +56,12 @@ function editItem(){
 }
 //Event Listeners
 submitBtn.addEventListener('click',getValue);
+clearAll.addEventListener('click',deleteAll);
+
+//Delete Alert
+if(alert){
+    setInterval(function(){
+        alert.innerHTML='';
+        alert.style.backgroundColor='transparent';
+    },1000);
+}
