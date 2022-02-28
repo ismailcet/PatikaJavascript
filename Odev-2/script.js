@@ -65,3 +65,12 @@ if(alert){
         alert.style.backgroundColor='transparent';
     },1000);
 }
+
+/* Yapılacaklar 
+1-Verileri Locala Kaydet
+2-Verileri localden yükle
+3-Edit butonu
+4-Verileri localden sil
+
+
+*/
