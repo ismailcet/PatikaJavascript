@@ -67,6 +67,10 @@ header {
   transition: all 0.3s linear;
   letter-spacing: 1px;
 }
+.btn-filter:hover {
+  background-color: #c59d5f;
+  color: #fff;
+}
 
 /* Menu İtem */
 .items-content {
@@ -111,6 +115,8 @@ header {
   margin-bottom: 0;
   color: rgb(97, 125, 152);
 }
+
+/* Responsive Design*/
 @media screen and (max-width: 1080px) {
   body {
     font-size: 14px;
